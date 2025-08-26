@@ -1,109 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IGO VIRAL</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #000000, #1D4ED8);
-      color: white;
-    }
-    .reveal {
-      visibility: hidden;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGOR VIRAL - Amplify Your Signal</title>
+    
+    <!-- Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
-<body class="overflow-x-hidden">
+<body>
 
-  <!-- Navbar -->
-  <header class="flex items-center justify-between px-6 py-4 bg-black sticky top-0 z-50">
-    <h1 class="text-2xl font-bold text-yellow-400">IGO VIRAL</h1>
-    <nav class="space-x-6">
-      <a href="#services" class="text-white hover:text-yellow-400 font-medium">Services</a>
-      <a href="#how" class="text-white hover:text-yellow-400 font-medium">How It Works</a>
-      <a href="#contact" class="text-white hover:text-yellow-400 font-medium">Contact</a>
-    </nav>
-  </header>
+    <!-- The Generative Pulse Canvas -->
+    <canvas id="pulse-canvas"></canvas>
 
-  <!-- Hero Section -->
-  <section class="min-h-screen flex flex-col md:flex-row items-center justify-between px-10 pt-20 bg-gradient-to-r from-black to-blue-800">
-    <div class="max-w-xl space-y-6 reveal">
-      <h2 class="text-4xl md:text-6xl font-bold leading-tight text-yellow-400">Take You Beyond Your Reach</h2>
-      <p class="text-lg text-white">Boost your social presence with fast and affordable visibility across Twitter, Instagram, YouTube and more.</p>
-      <button class="px-6 py-3 bg-yellow-400 text-black font-semibold rounded hover:bg-yellow-300 transition">Get Started</button>
-    </div>
-    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_fcfjwiyb.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></lottie-player>
-  </section>
+    <header>
+        <div class="logo"><a style="all: unset; cursor: pointer;" href="/">IGOR VIRAL</a></div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#process">Process</a>
+            <a href="https://wa.me/+2348021395076" target="_blank" class="btn-primary">Boost Now</a>
+        </nav>
+    </header>
 
-  <!-- Services Section -->
-  <section id="services" class="py-20 bg-black px-6 text-center reveal">
-    <h3 class="text-3xl font-bold text-yellow-400 mb-10">Our Services</h3>
-    <div class="grid md:grid-cols-3 gap-8 text-white">
-      <div class="bg-blue-900 p-6 rounded-lg shadow-lg hover:scale-105 transform transition">
-        <h4 class="text-xl font-bold mb-2">Twitter Growth</h4>
-        <p>Gain followers, retweets, and engagement organically and instantly.</p>
-      </div>
-      <div class="bg-blue-900 p-6 rounded-lg shadow-lg hover:scale-105 transform transition">
-        <h4 class="text-xl font-bold mb-2">Instagram Boost</h4>
-        <p>Increase likes, views, and reach on your IG posts and reels.</p>
-      </div>
-      <div class="bg-blue-900 p-6 rounded-lg shadow-lg hover:scale-105 transform transition">
-        <h4 class="text-xl font-bold mb-2">YouTube & Audiomack</h4>
-        <p>Improve streams, views, and get noticed faster by music lovers.</p>
-      </div>
-    </div>
-  </section>
+    <main>
+        <section class="hero">
+            <h1>Amplify Your Reach</h1>
+            <p>Your work is great. It just needs to be heard. We provide the power to cut through the noise.</p>
+        </section>
 
-  <!-- How It Works -->
-  <section id="how" class="py-20 bg-gradient-to-r from-blue-900 to-black px-6 text-center reveal">
-    <h3 class="text-3xl font-bold text-yellow-400 mb-10">How It Works</h3>
-    <div class="grid md:grid-cols-4 gap-6 text-white">
-      <div class="p-4">
-        <div class="text-2xl font-bold">1.</div>
-        <p>Choose Your Service</p>
-      </div>
-      <div class="p-4">
-        <div class="text-2xl font-bold">2.</div>
-        <p>Make Payment</p>
-      </div>
-      <div class="p-4">
-        <div class="text-2xl font-bold">3.</div>
-        <p>Submit Your Details</p>
-      </div>
-      <div class="p-4">
-        <div class="text-2xl font-bold">4.</div>
-        <p>Get Boosted Instantly!</p>
-      </div>
-    </div>
-  </section>
+        <section id="services" class="services">
+            <div class="section-title">
+                <span class="label">// CHANNELS</span>
+                <h2>Select Your Frequency</h2>
+            </div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Instagram</h3>
+                    <p>Visual amplification for stories, posts, and reels.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Twitter / X</h3>
+                    <p>Broadcast your message with amplified reach and engagement.</p>
+                </div>
+                <div class="service-card">
+                    <h3>YouTube</h3>
+                    <p>Tune your content for views, subscribers, and discovery.</p>
+                </div>
+            </div>
+        </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-20 bg-black text-center px-6 reveal">
-    <h3 class="text-3xl font-bold text-yellow-400 mb-4">Contact Us</h3>
-    <p class="mb-6 text-white">Have questions? Chat directly via WhatsApp or send a message below.</p>
-    <a href="https://wa.me/234XXXXXXXXXX" class="inline-block bg-green-500 text-white px-6 py-3 rounded font-semibold hover:bg-green-400">💬 WhatsApp Us</a>
-  </section>
+        <section id="process" class="process">
+            <div class="section-title">
+                <span class="label">// SIGNAL CHAIN</span>
+                <h2>Our Amplification Process</h2>
+            </div>
+            <div class="process-steps">
+                <div class="step"><span>01</span><h3>Calibrate</h3><p>Choose your platform and define your amplification goals.</p></div>
+                <div class="step"><span>02</span><h3>Modulate</h3><p>Select a power level that matches your desired impact.</p></div>
+                <div class="step"><span>03</span><h3>Broadcast</h3><p>We push your signal live and you watch the audience tune in.</p></div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer id="contact">
+        <h2>Ready to go live?</h2>
+        <a href="https://wa.me/+2348021395076" target="_blank" class="btn-primary large">Amplify My Signal</a>
+        <p class="copyright">&copy; 2025 IGO VIRAL. All Rights Reserved.</p>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="text-center text-white text-sm bg-black py-6">
-    &copy; 2025 IGO VIRAL. All rights reserved.
-  </footer>
-
-  <!-- ScrollReveal Animation -->
-  <script>
-    ScrollReveal().reveal('.reveal', {
-      duration: 800,
-      distance: '60px',
-      origin: 'bottom',
-      easing: 'ease-out',
-      interval: 100
-    });
-  </script>
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
 </html>
